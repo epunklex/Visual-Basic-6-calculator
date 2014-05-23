@@ -1,0 +1,53 @@
+Private Sub Command1_Click()
+Dim no1 As Double
+Dim no2 As Double
+Dim Char1 As String
+Dim Char2 As String
+Dim Char3 As String
+Dim Char4 As String
+Dim Char5 As String
+Dim Char6 As String
+
+no1 = Val(Text1.Text)
+no2 = Val(Text2.Text)
+
+Char1 = (Option1.Value)
+Char2 = (Option2.Value)
+Char3 = (Option3.Value)
+Char4 = (Option4.Value)
+Char5 = (Option5.Value)
+Char6 = (Option6.Value)
+
+
+
+
+If Char1 = True Then
+answer = no1 * 100 + no2 * 100
+Label1.Caption = answer
+End If
+    If Char2 = True Then
+    answer = no1 * 1000 + no2 * 1000
+    Label1.Caption = answer
+    End If
+If Char3 = True Then
+answer = no1 * 10000 + no2 * 10000
+Label1.Caption = answer
+End If
+    If Char4 = True Then
+    answer = no1 * 1000000 + no2 * 1000000
+    Label1.Caption = answer
+    End If
+If Char5 = True Then
+answer = no1 * 1000000000 + no2 * 1000000000
+Label1.Caption = answer
+End If
+   If Char6 = True Then
+   answer = no1 * 1000000000000# + no2 * 1000000000000#
+   Label1.Caption = answer
+   Else
+   Label1.Caption = answer
+   End If
+
+
+End Sub
+
